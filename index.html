@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#cdebf3">
+    <meta
+      name="description"
+      content="Clare Poh Jia Hui is a full-stack software engineer building thoughtful interfaces and dependable backend workflows."
+    >
+    <title>Clare Poh Jia Hui — Full-Stack Software Engineer</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <div class="window-titlebar">
+        <span class="window-app-icon" aria-hidden="true">c.</span>
+        <span class="window-title">CLARE'S PORTFOLIO.EXE</span>
+        <span class="window-controls" aria-hidden="true"><i>−</i><i>□</i><i>×</i></span>
+      </div>
+      <header class="topbar">
+        <a class="wordmark" href="#home" aria-label="Clare Poh Jia Hui, home">
+          <span class="wordmark-mark" aria-hidden="true">c.</span>
+          <span>Clare Poh Jia Hui</span>
+        </a>
+        <a class="top-contact" href="mailto:clarepjh@gmail.com">Let’s connect <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <section class="intro adventure-scene" id="home" aria-labelledby="name">
+        <div class="panel-titlebar">
+          <span>ABOUT_ME.txt</span>
+          <span class="panel-controls" aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+        <div class="panel-content">
+          <p class="eyebrow"><span class="status-dot"></span> Full-stack engineer</p>
+          <h1 id="name">Clare Poh <span>Jia Hui</span></h1>
+          <p class="headline">Senior Full-Stack Software Engineer <span aria-hidden="true">|</span> React, TypeScript &amp; Java</p>
+          <p class="summary">
+            I’m a full-stack software engineer at ST Engineering, building production features across
+            React/TypeScript, Java Spring Boot and MongoDB. I enjoy turning complex requirements into
+            clear, data-rich interfaces and dependable backend workflows, while contributing to
+            solution design, frontend quality, and team delivery.
+          </p>
+        </div>
+        <button
+          class="rabbit-launch"
+          type="button"
+          aria-label="Open the rabbit runner mini-game"
+          aria-haspopup="dialog"
+          aria-controls="rabbit-game"
+        >
+          <img src="assets/pixel-rabbit.svg" alt="">
+          <span class="launch-caption" aria-hidden="true">CLICK TO PLAY</span>
+        </button>
+      </section>
+
+      <section class="experience" aria-labelledby="experience-title">
+        <div class="panel-titlebar">
+          <span>EXPERIENCE.WIN</span>
+          <span class="panel-controls" aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+        <div class="experience-content">
+          <div class="section-heading">
+            <p class="eyebrow">A little about my work</p>
+            <h2 id="experience-title">Experience highlights</h2>
+          </div>
+          <div class="highlight-list">
+            <article class="highlight">
+              <div class="highlight-titlebar"><span>FEATURE_01.txt</span><span class="panel-controls" aria-hidden="true"><i></i><i></i><i></i></span></div>
+              <div class="highlight-content">
+                <span class="highlight-number" aria-hidden="true">01</span>
+                <p>Own full-stack features from requirements and technical design through production, using React/TypeScript, Spring Boot and MongoDB.</p>
+              </div>
+            </article>
+            <article class="highlight">
+              <div class="highlight-titlebar"><span>FEATURE_02.txt</span><span class="panel-controls" aria-hidden="true"><i></i><i></i><i></i></span></div>
+              <div class="highlight-content">
+                <span class="highlight-number" aria-hidden="true">02</span>
+                <p>Build data-intensive interfaces with interactive mapping, inline editing and change tracking; design configurable authorization and asynchronous backend workflows.</p>
+              </div>
+            </article>
+            <article class="highlight">
+              <div class="highlight-titlebar"><span>FEATURE_03.txt</span><span class="panel-controls" aria-hidden="true"><i></i><i></i><i></i></span></div>
+              <div class="highlight-content">
+                <span class="highlight-number" aria-hidden="true">03</span>
+                <p>Lead frontend reviews, mentor developers and support delivery decisions; served as Scrum Master for a five-person team.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bottom">
+        <div class="skills">
+          <h2 class="footer-label">Tools I work with</h2>
+          <p>Java · TypeScript · JavaScript · SQL · React · Redux Toolkit · Spring Boot · REST APIs · MongoDB · JUnit · Mockito · JMeter · Playwright (exposure) · Docker · GitLab · CI/CD (working knowledge)</p>
+        </div>
+        <nav class="links" aria-label="Contact links">
+          <a href="mailto:clarepjh@gmail.com">Email <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/clare-poh/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/clarepjh/" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </nav>
+      </footer>
+    </main>
+    <dialog class="game-dialog" id="rabbit-game" aria-labelledby="game-title" aria-describedby="game-instructions">
+      <div class="game-window">
+        <div class="game-titlebar">
+          <h2 id="game-title">BUNNY_RUNNER.EXE</h2>
+          <button class="game-close" type="button" aria-label="Close game">×</button>
+        </div>
+        <div class="game-layout">
+          <div class="game-main">
+            <p class="game-instructions" id="game-instructions">Jump over the mushrooms! Press Space or ↑, tap the game, or use Jump.</p>
+            <canvas id="rabbit-canvas" width="720" height="220" role="img" aria-label="A rabbit runs across a pastel landscape and jumps over mushrooms">
+              A rabbit-runner game. Use the Jump button, Space, or the Up Arrow to jump.
+            </canvas>
+            <p class="sr-only" id="game-status" aria-live="polite"></p>
+            <form class="score-entry" id="score-form" hidden>
+              <label for="player-name">Your name <span>(kept until you close the game)</span></label>
+              <div class="score-entry-row">
+                <input id="player-name" name="player-name" type="text" maxlength="18" autocomplete="off" required>
+                <button class="game-action game-jump" type="submit">Save score</button>
+              </div>
+            </form>
+            <div class="game-actions">
+              <button class="game-action game-jump" id="motion-play-button" type="button" hidden>Play animation</button>
+              <button class="game-action game-jump" id="jump-button" type="button">Jump</button>
+              <button class="game-action" id="restart-button" type="button">Restart</button>
+              <a href="https://trex-runner.com/" target="_blank" rel="noopener noreferrer">Original T-Rex Runner ↗</a>
+            </div>
+          </div>
+          <aside class="scoreboard" aria-labelledby="scoreboard-title">
+            <h3 id="scoreboard-title">High scores</h3>
+            <p>Top 5 this visit. Closing the game clears scores.</p>
+            <ol id="score-list" aria-live="polite">
+              <li class="score-empty">Play a run to add a score.</li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </dialog>
+    <script src="script.js" defer></script>
+  </body>
+</html>
